@@ -318,7 +318,7 @@
                     "            finding_csv = f'{finding_id}{csv}{finding_ProductArn}{csv}{finding_ProductName}{csv}{finding_CompanyName}{csv}{finding_GeneratorId}{csv}{finding_SecurityControlId}{csv}{finding_CreatedAt}{csv}{finding_UpdatedAt}{csv}{finding_Confidence}{csv}{finding_RemText}{csv}{finding_RemUrl}{csv}{finding_SourceUrl}{csv}{finding_Compliance}{csv}{finding_WorkflowStatus}{csv}{finding_RecordState}{csv}{finding_Processed_at}{csv}{finding_title}{csv}{finding_severity}{csv}{finding_region}{csv}{finding_account_id}{csv}{finding_description}{csv}{finding_resource_type}{csv}{finding_resource_id}{csv}{finding_resource_tags}'+ os.linesep",
                     "            findings_csv += finding_csv",
                     "            lines = lines + 1",
-                    "            print('get_securityhub_findings2csv FINDING ' + lines + ' PROCESSED')",
+                    "            print('get_securityhub_findings2csv FINDING ' + str(lines) + ' PROCESSED')",
                     "    print('lines:' + str(lines))",
                     "    return findings_csv",
                     " ",
