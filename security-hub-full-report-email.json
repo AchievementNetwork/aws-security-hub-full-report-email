@@ -24,12 +24,13 @@
       "S3BucketName":{
         "Type": "AWS::S3::Bucket",
         "DeletionPolicy": "Retain",
+        "UpdateReplacePolicy": "Retain",
         "Metadata": {
           "cfn_nag":{
             "rules_to_suppress":[
             {
               "id": "W35",
-              "reason": "Can't resolve without creating a depedency with other S3 Bucket"
+              "reason": "Can't resolve without creating a dependency with other S3 Bucket"
             }
             ]
           }
